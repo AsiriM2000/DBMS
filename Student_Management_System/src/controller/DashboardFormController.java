@@ -27,7 +27,8 @@ public class DashboardFormController {
         setUi("update-student-form");
     }
 
-    public void loadAllOnAction(ActionEvent actionEvent) {
+    public void loadAllOnAction(ActionEvent actionEvent) throws IOException {
+        setUi("all-student-form");
     }
     private void setUi(String URI) throws IOException {
         Parent parent  =FXMLLoader.load(getClass().getResource("../view/"+URI+".fxml"));
