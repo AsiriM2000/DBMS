@@ -19,7 +19,8 @@ public class DashboardFormController {
         setUi("manage-student-form");
     }
 
-    public void deleteOnAction(ActionEvent actionEvent) {
+    public void deleteOnAction(ActionEvent actionEvent) throws IOException {
+        setUi("delete-student-form");
     }
 
     public void updateOnAction(ActionEvent actionEvent) {
